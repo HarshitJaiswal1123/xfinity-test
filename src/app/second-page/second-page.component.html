@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>C1</th>
+      <th>C2</th>
+      <th>C3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of data; let i = index">
+      <th scope="row">{{x.name}}</th>
+      <ng-container  *ngFor="let value of x.values">
+		      <td>{{value.amount}}</td>
+		      <td>{{value.amount}}</td>
+		      <td>{{value.amount}}</td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>

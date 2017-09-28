@@ -6,12 +6,14 @@ import { HttpModule }    from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppServiceService } from './app-service.service';
+import { SecondPageComponent } from './second-page/second-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SecondPageComponent
   ],
   imports: [
     BrowserModule,

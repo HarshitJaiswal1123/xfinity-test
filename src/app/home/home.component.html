@@ -1,3 +1,18 @@
-<p>
-  home works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of data; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{x.name}}</td>
+      <td>{{x.category}}</td>
+      <td>{{x.amount}}</td>
+    </tr>
+  </tbody>
+</table>

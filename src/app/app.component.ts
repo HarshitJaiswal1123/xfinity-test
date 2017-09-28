@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AppServiceService } from './app-service.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +8,9 @@ import { AppServiceService } from './app-service.service';
 export class AppComponent implements OnInit{
   title = 'app';
 
-  constructor(private appService: AppServiceService){ }
+  constructor(){ }
 
   ngOnInit(){
-  	this.appService.getData().subscribe();
+  	
   }
 }

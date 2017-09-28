@@ -9,7 +9,7 @@ export class AppServiceService {
 
   getData() {
   	return this.http.get("assets/data.json").map((data) => {
- 		console.log(data.json()); 	
+ 		return data.json(); 	
   	})
   }
 
